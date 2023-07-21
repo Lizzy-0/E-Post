@@ -1,0 +1,75 @@
+<%- include("./partials/header", {message:message}) %>
+  
+    <section id="section1">
+      <div class="left">
+        <img src="./images/parcels.jpg" alt="" />
+        <div class="card">
+          <h1>Send and Track your packages</h1>
+          <a href="">Send Now <i class="fab fa-arrow-right"></i> </a>
+        </div>
+      </div>
+     <%- include("./partials/tracker-card") %>
+     
+     </div>
+    </section>
+    <hr />
+    <section id="help">
+      <div class="help-col">
+        <h2>Sending Mail</h2>
+        <p>Click and Drop</p>
+        <a href="/click-and-drop"
+          ><ion-icon name="arrow-forward-circle-outline"></ion-icon
+        ></a>
+      </div>
+      <div class="help-col">
+        <h2>Track your Item</h2>
+        <p>Track and Trace Deliveries</p>
+        <a href="/tracker">
+          <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        </a>
+      </div>
+      <div class="help-col">
+        <h2>Your Postal Code</h2>
+        <p>Get your postcode</p>
+        <a href="/get-postcode">
+          <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        </a>
+      </div>
+      <div class="help-col">
+        <h2>Services Near You</h2>
+        <p>Find Our Location</p>
+        <a href="#">
+          <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        </a>
+      </div>
+    </section>
+    <hr />
+    <section id="stamps">
+      <div id="stamp-header">
+        <h1>Our Postage Stamps</h1>
+        <p>We Sell Good Postage Stamps</p>
+      </div>
+      <div class="splide">
+        <div class="splide__track">
+          <div class="splide__list">
+            <div class="splide__slide">
+              <div class="img_box">
+                <img src="/images/stamp1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="splide__slide">
+              <div class="img_box">
+                <img src="/images/stamp2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="splide__slide">
+              <div class="img_box">
+                <img src="/images/stamp3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<%- include("./partials/footer") %>
+

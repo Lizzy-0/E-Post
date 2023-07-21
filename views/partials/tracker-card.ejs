@@ -1,0 +1,21 @@
+ <div class="right">
+        <form>
+          <h4>Track your Order</h4>
+          <input
+            id="track_id"
+            type="text"
+            size="20"
+            maxlength="15"
+            tabindex="100"
+            autocomplete="off"
+            placeholder="Enter your Track ID"
+          />
+
+          <input onclick="track()" class="button" value="Submit" />
+        </form>
+        <div id="result">
+          <h1 id="result-header"></h1>
+          <p id="home_order_number"></p>
+          <p style="color: green;" id="home_details"></p>
+         </div>
+      </div>

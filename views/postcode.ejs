@@ -1,0 +1,27 @@
+<%- include("./partials/header") %>
+<div class="postcode-card">
+        <form method="post" action="/get-postcode">
+          <h4>Get your Postcode</h4>
+          <p><strong>Give it some time to load after submittinng</strong></p>
+          <input
+            id="track_id"
+            type="text"
+            size="20"
+            maxlength="15"
+            tabindex="100"
+            autocomplete="off"
+            placeholder="Enter a Town in UK"
+            name="location"
+          />
+
+          <input type="submit" class="button" value="Submit" />
+          
+        </form>
+        <h3>Location: <%= address %></h3>
+        <br>
+    <h3>Postcode: <%= postcode.rawTxt %></h3>
+    <br>
+    <h3> Latitude,Longitude: (<%= latitude %> , <%= longitude %>)</h3>
+    
+</div>
+<%- include("./partials/footer") %>
